@@ -27,6 +27,8 @@ class MusicManager:
                 'quiet': True,
                 'no_warnings': True,
                 'cookiefile': 'cookies.txt',
+                'geo_bypass': True,
+                'geo_bypass_country': 'KZ',
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'mp3',
@@ -82,6 +84,8 @@ class MusicManager:
                 'fragment_retries': 10, 
                 'outtmpl': f'{Config.MUSIC_DIR}/%(title)s.%(ext)s',
                 'nooverwrites': True,
+                'geo_bypass': True,
+                'geo_bypass_country': 'KZ',
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'mp3',
@@ -116,6 +120,8 @@ class MusicManager:
                 'format': 'bestaudio/best',
                 'quiet': True,
                 'no_warnings': True,
+                'geo_bypass': True,
+                'geo_bypass_country': 'KZ',
                 'cookiefile': 'cookies.txt', 
                 'default_search': 'ytsearch5',
             }
@@ -184,6 +190,8 @@ class MusicManager:
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'mp3',
                     'preferredquality': '192',
+                    'geo_bypass': True,
+                    'geo_bypass_country': 'KZ',
                 }],
                 'quiet': True,
                 'no_warnings': True,
